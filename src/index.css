@@ -1,20 +1,21 @@
+
 @import "tailwindcss";
 
 @layer base {
   :root {
-    --color-ivory: #FDFBF7;
-    --color-cream: #F7F2EA;
-    --color-burgundy: #4A0E17;
-    --color-burgundy-dark: #380B12;
-    --color-gold: #D4AF37;
-    --color-gold-light: #F3E5AB;
-    --color-gold-dark: #997819;
+    --color-ivory: #FAF8F1;
+    --color-cream: #F1EBDD;
+    --color-burgundy: #064E3B;
+    --color-burgundy-dark: #022C22;
+    --color-gold: #D6B875;
+    --color-gold-light: #F1E2B8;
+    --color-gold-dark: #A88743;
   }
 
   body {
     font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-    background-color: #FDFBF7;
-    color: #241315;
+    background-color: #FAF8F1;
+    color: #102A22;
     -webkit-tap-highlight-color: transparent;
   }
 
@@ -24,35 +25,41 @@
   }
 }
 
-/* Safe areas for Android devices */
+/* Android Safe Areas */
 .safe-top {
   padding-top: env(safe-area-inset-top, 0px);
 }
+
 .safe-bottom {
   padding-bottom: env(safe-area-inset-bottom, 0px);
 }
 
-/* Custom discreet scrollbars */
+/* Premium Scrollbars */
 ::-webkit-scrollbar {
   width: 5px;
   height: 5px;
 }
+
 ::-webkit-scrollbar-track {
   background: transparent;
 }
+
 ::-webkit-scrollbar-thumb {
-  background: #E0D6C6;
+  background: #D6C9A8;
   border-radius: 9999px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
-  background: #C5A059;
+  background: #A88743;
 }
 
-/* Hide scrollbar utility */
+/* Hide Scrollbar */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
-}
+  }
+    
