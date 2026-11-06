@@ -1,6 +1,8 @@
+
 {
-  "short_name": "Shilpa Dresses",
-  "name": "Shilpa Dresses - Luxury Boutique by NEXORA",
+  "short_name": "Royal Threads",
+  "name": "ROYAL THREADS - Premium Fashion by NEXORA",
+  "description": "Discover premium fashion and book your free in-store trial at Royal Threads, Darwha.",
   "icons": [
     {
       "src": "/icon.png",
@@ -10,8 +12,8 @@
     }
   ],
   "start_url": "/",
-  "background_color": "#4A0E17",
-  "theme_color": "#4A0E17",
+  "background_color": "#064E3B",
+  "theme_color": "#064E3B",
   "display": "standalone",
   "orientation": "portrait"
 }
