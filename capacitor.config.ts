@@ -1,10 +1,10 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.nexora.shilpadresses',
-  appName: 'Shilpa Dresses',
+  appId: 'com.nexora.royalthreads',
+  appName: 'Royal Threads',
   webDir: 'dist',
-  backgroundColor: '#4A0E17',
+  backgroundColor: '#064E3B',
   server: {
     androidScheme: 'https',
     cleartext: false
@@ -13,7 +13,7 @@ const config: CapacitorConfig = {
     allowMixedContent: false,
     captureInput: true,
     webContentsDebuggingEnabled: false,
-    backgroundColor: '#4A0E17',
+    backgroundColor: '#064E3B',
     buildOptions: {
       keystorePath: 'release-key.jks',
       keystoreAlias: 'shilpadresses',
@@ -23,7 +23,7 @@ const config: CapacitorConfig = {
     SplashScreen: {
       launchShowDuration: 2200,
       launchAutoHide: true,
-      backgroundColor: '#4A0E17',
+      backgroundColor: '#064E3B',
       androidSplashResourceName: 'splash',
       androidScaleType: 'CENTER_CROP',
       showSpinner: false,
@@ -32,7 +32,7 @@ const config: CapacitorConfig = {
     },
     StatusBar: {
       style: 'DARK',
-      backgroundColor: '#4A0E17',
+      backgroundColor: '#064E3B',
       overlaysWebView: false
     }
   }
