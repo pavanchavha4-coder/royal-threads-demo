@@ -1,18 +1,19 @@
+
 import { Product, Category, AppSetting, TimeSlotOption } from '../types';
 
 export const STORE_SETTINGS: AppSetting = {
-  id: 'shilpa_store_main',
-  storeName: 'SHILPA DRESSES',
-  tagline: 'Exquisite Heritage & Contemporary Couture',
+  id: 'royal_threads_main',
+  storeName: 'ROYAL THREADS',
+  tagline: 'Style That Defines Royalty',
   brandOwner: 'NEXORA Technologies',
-  phone: '+91 98234 56789',
-  alternatePhone: '+91 98234 56780',
-  address: 'Shop No. 12-14, Heritage Royale Mall, High Street, M.G. Road',
-  city: 'Pune',
-  state: 'Maharashtra - 411001',
+  phone: '+91 00000 00000',
+  alternatePhone: '+91 00000 00000',
+  address: 'Main Market, Darwha',
+  city: 'Darwha',
+  state: 'Maharashtra',
   openingTime: '10:00 AM',
   closingTime: '09:00 PM',
-  maxTrialsPerSlot: 1, // Strict single VIP booking per slot to guarantee exclusivity!
+  maxTrialsPerSlot: 1,
   trialDurationMinutes: 45
 };
 
@@ -31,28 +32,28 @@ export const INITIAL_CATEGORIES: Category[] = [
   {
     id: 'cat_women',
     name: "Women's Wear",
-    description: 'Bridal Lehengas, Banarasi Sarees, Designer Gowns & Anarkalis',
+    description: 'Elegant Sarees, Designer Gowns, Lehengas & Anarkalis',
     imageUrl: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80',
     itemCount: 8
   },
   {
     id: 'cat_men',
     name: "Men's Wear",
-    description: 'Heritage Royal Sherwanis, Jodhpuri Bandhgalas & Kurta Sets',
+    description: 'Premium Shirts, Trousers, Suits & Traditional Wear',
     imageUrl: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80',
     itemCount: 6
   },
   {
     id: 'cat_kids',
-    name: "Kids Wear",
-    description: 'Festive Kurta Dhotis, Prince Blazers & Pastel Lehengas',
+    name: 'Kids Wear',
+    description: 'Stylish Outfits for Every Little Occasion',
     imageUrl: 'https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?auto=format&fit=crop&w=800&q=80',
     itemCount: 5
   },
   {
     id: 'cat_couture',
-    name: "Bridal & Couture",
-    description: 'Handcrafted Zari Couture & Custom Bespoke Outfits',
+    name: 'Bridal & Couture',
+    description: 'Exclusive Bridal and Celebration Collections',
     imageUrl: 'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=800&q=80',
     itemCount: 7
   }
@@ -66,7 +67,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     subcategory: 'Bridal Lehenga',
     price: 34999,
     originalPrice: 42999,
-    description: 'Crafted in pure royal velvet and raw silk with intricate hand zardozi, real antique gold bullion embroidery, and a double dupatta set.',
+    description: 'Elegant bridal lehenga with intricate embroidery and premium fabric.',
     fabric: 'Velvet & Raw Silk',
     sizes: ['S', 'M', 'L', 'XL', 'Custom Fit'],
     colors: ['Deep Burgundy', 'Wine Red', 'Royal Maroon'],
@@ -90,7 +91,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     subcategory: 'Silk Sarees',
     price: 22499,
     originalPrice: 27999,
-    description: 'Pure certified mulberry handloom silk woven with 24k gold electroplated silver zari tissue warp, featuring majestic peacock and temple motifs.',
+    description: 'Beautiful traditional silk saree with elegant gold detailing.',
     fabric: 'Pure Mulberry Silk & Gold Zari',
     sizes: ['Custom Fit'],
     colors: ['Champagne Gold', 'Antique Brass', 'Rose Gold'],
@@ -110,7 +111,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     subcategory: 'Jodhpuri Suit',
     price: 18999,
     originalPrice: 23500,
-    description: 'Tailored imperial silhouette in textured raw silk with hand-cast brass crest buttons, structured padded shoulders, and tailored slim trousers.',
+    description: 'Premium traditional Jodhpuri outfit with a royal modern look.',
     fabric: 'Textured Bhagalpuri Raw Silk',
     sizes: ['38 (S)', '40 (M)', '42 (L)', '44 (XL)', 'Custom Fit'] as any,
     colors: ['Deep Burgundy', 'Charcoal Black', 'Navy Indigo'],
@@ -130,7 +131,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     subcategory: 'Sherwani',
     price: 38500,
     originalPrice: 46000,
-    description: 'Masterpiece groom sherwani with intricate threadwork, fine seed pearls, gold foil French knots, churidar, safa turban fabric, and pure silk stole.',
+    description: 'Elegant ivory sherwani with premium traditional embroidery.',
     fabric: 'Matka Silk with Pearl Threadwork',
     sizes: ['38 (S)', '40 (M)', '42 (L)', 'Custom Fit'] as any,
     colors: ['Imperial Ivory', 'Champagne Cream'],
@@ -150,7 +151,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     subcategory: 'Anarkali Suit',
     price: 19500,
     originalPrice: 24000,
-    description: 'Floor-length flared Anarkali in plush royal micro-velvet, adorned with intricate champagne gota-patti and cutdana embroidery along the hemline.',
+    description: 'Beautiful emerald green Anarkali gown with elegant detailing.',
     fabric: 'Micro Velvet & Organza Dupatta',
     sizes: ['S', 'M', 'L', 'XL'],
     colors: ['Emerald Green', 'Deep Teal'],
@@ -166,11 +167,11 @@ export const INITIAL_PRODUCTS: Product[] = [
   {
     id: 'prod_6',
     name: 'Little Prince Brocade Kurta Dhoti Set',
-    category: "Kids Wear",
+    category: 'Kids Wear',
     subcategory: 'Kids Ethnic',
     price: 4999,
     originalPrice: 6500,
-    description: 'Comfortable pure cotton lined Benarasi brocade kurta paired with readymade pre-pleated satin dhoti and matching pocket square.',
+    description: 'Comfortable festive kurta dhoti set for kids.',
     fabric: 'Cotton Lined Brocade & Soft Satin',
     sizes: ['S', 'M', 'L'],
     colors: ['Ruby Red & Gold', 'Champagne & Maroon'],
@@ -186,11 +187,11 @@ export const INITIAL_PRODUCTS: Product[] = [
   {
     id: 'prod_7',
     name: 'Princess Flared Tiered Pastel Lehenga Choli',
-    category: "Kids Wear",
+    category: 'Kids Wear',
     subcategory: 'Kids Lehenga',
     price: 5800,
     originalPrice: 7200,
-    description: 'Lightweight layered net lehenga with fine sequin foil spray, soft muslin inner lining to prevent itching, and an embellished sweetheart blouse.',
+    description: 'Beautiful lightweight pastel lehenga for kids.',
     fabric: 'Soft Net & Malmal Cotton Lining',
     sizes: ['XS', 'S', 'M', 'L'],
     colors: ['Peach Pink', 'Powder Blue', 'Mint Gold'],
@@ -210,7 +211,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     subcategory: 'Suits & Tuxedos',
     price: 24500,
     originalPrice: 29999,
-    description: 'Italian cut single-breasted tuxedo in premium imported stretch velvet with silk grosgrain lapels, double back vents, and satin tuxedo trousers.',
+    description: 'Premium black velvet tuxedo with a stylish modern fit.',
     fabric: 'Imported Stretch Velvet & Silk Satin',
     sizes: ['38 (S)', '40 (M)', '42 (L)', '44 (XL)'] as any,
     colors: ['Midnight Black', 'Deep Navy'],
@@ -224,3 +225,4 @@ export const INITIAL_PRODUCTS: Product[] = [
     updatedAt: '2026-02-04T12:00:00Z'
   }
 ];
+  
