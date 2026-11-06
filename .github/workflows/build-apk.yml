@@ -38,6 +38,16 @@ jobs:
       - name: Sync Capacitor Android
         run: npx cap sync android
 
+      - name: Prepare Royal Threads Icon
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y imagemagick
+          mkdir -p assets
+          convert public/icon.png -resize 1024x1024! assets/icon.png
+
+      - name: Generate Android App Icons
+        run: npx --yes @capacitor/assets generate --android --iconBackgroundColor '#064E3B'
+
       - name: Build debug APK
         working-directory: android
         run: |
